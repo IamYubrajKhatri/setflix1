@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "setflix": "file:.."
+  }
+}
