@@ -1,7 +1,6 @@
 import { BlobServiceClient } from "@azure/storage-blob";
 import { Env_Vars } from "../config/env.Vars.js";
 
-
 // Create a BlobServiceClient to interact with the Azure Blob Storage account
 const blobServiceClient = BlobServiceClient.fromConnectionString(Env_Vars.AZURE_BLOB_STORAGE);
 
