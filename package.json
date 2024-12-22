@@ -11,7 +11,7 @@
     "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git+https://github.com/IamYubrajKhatri/Setflix_Stream.git"
   },
   "author": "Yubraj Khatri",
@@ -32,7 +32,8 @@
     "mongoose": "^8.8.2",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "npx": "^10.2.2"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
