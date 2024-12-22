@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "cross-env NODE_ENV=production vite build",
+    "build": "cross-env NODE_ENV=production vite build && @vitejs/plugin-react build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
