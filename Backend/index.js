@@ -21,8 +21,6 @@ import { protectRoute } from "./middleware/protectRoute.js";
 import cookieParser from "cookie-parser";
 
 
-
-
 const app = express();
 const __dirname = path.resolve();
 
@@ -37,7 +35,7 @@ app.use(cors({
 //connect to mongo db
 //console.log("Mongouri ", process.env.MongoDBURI); this code shows where is it connected on which uri in console
 
-const PORT=process.env.PORT;
+const PORT=Env_Vars.PORT;
 
 app.use(express.json());// will allow us to use req.body ..for eg i use postman to give the data entry in json format.
 app.use(cookieParser());

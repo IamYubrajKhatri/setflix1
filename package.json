@@ -8,10 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon Backend/index.js",
     "start": "cross-env NODE_ENV=production node Backend/index.js",
-    "build": "npm install  && npm install --prefix Frontend  && npm run build --prefix Frontend"
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "repository": {
-    "type": "git",
+    "type": "git", 
     "url": "git+https://github.com/IamYubrajKhatri/Setflix_Stream.git"
   },
   "author": "Yubraj Khatri",
@@ -29,17 +29,14 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
-    "mime-types": "^2.1.35",
     "mongoose": "^8.8.2",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
-    "nodemon": "^3.1.7",
-    "cross-env": "^7.0.3"
-    
+    "nodemon": "^3.1.7"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
-    "cross-env": "^7.0.3"
-    
+    "cross-env": "^7.0.3",
+    "vite": "^6.0.3"
   }
 }
