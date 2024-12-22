@@ -26,7 +26,7 @@ const __dirname = path.resolve();
 
 
 app.use(cors({
-  origin: Env_Vars.NODE_ENV === 'production' ? 'https://setflix.azurewebsites.net' : 'http://localhost:5173',
+  origin: Env_Vars.NODE_ENV === 'production' ? 'https://setflix10.azurewebsites.net' : 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true
 }));
@@ -35,7 +35,7 @@ app.use(cors({
 //connect to mongo db
 //console.log("Mongouri ", process.env.MongoDBURI); this code shows where is it connected on which uri in console
 
-const PORT=Env_Vars.PORT|| 8080;
+const PORT=process.env.PORT;
 
 app.use(express.json());// will allow us to use req.body ..for eg i use postman to give the data entry in json format.
 app.use(cookieParser());
