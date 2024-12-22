@@ -21,12 +21,14 @@ import { protectRoute } from "./middleware/protectRoute.js";
 import cookieParser from "cookie-parser";
 
 
+
+
 const app = express();
 const __dirname = path.resolve();
 
 
 app.use(cors({
-  origin: Env_Vars.NODE_ENV === 'production' ? 'https://setflix10.azurewebsites.net' : 'http://localhost:5173',
+  origin: Env_Vars.NODE_ENV === 'production' ? 'https://setflix1.azurewebsites.net' : 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true
 }));
