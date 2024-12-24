@@ -35,11 +35,10 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.7",
-    "npx": "^10.2.2",  "vite": "^6.0.3"
+    "npx": "^10.2.2"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
-    "cross-env": "^7.0.3",
-    "vite": "^6.0.3"
+    "cross-env": "^7.0.3"
   }
 }
