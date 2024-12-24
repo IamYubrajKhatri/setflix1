@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 */
 
 import express from "express";
-//import path from 'path';
+import path from 'path';
 
 import authRoute from "./route/auth.route.js";
 import moviesRoute from "./route/movie1.router.js"
@@ -22,7 +22,7 @@ import cookieParser from "cookie-parser";
 
 
 const app = express();
-//const __dirname = path.resolve();
+const __dirname = path.resolve();
 
 
 app.use(cors({
@@ -45,14 +45,14 @@ app.use("/api/movies",protectRoute,moviesRoute)
 app.use("/api/admin", adminRoute);
 
 //this knows where the frontend projekt is stored and where it runs
-/*if(Env_Vars.NODE_ENV==="production"){
+if(Env_Vars.NODE_ENV==="production"){
   app.use(express.static(path.join(__dirname,"/Frontend/dist")));//now this is our react app
 
   app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"Frontend","dist","index.html"))
   })
   
-}*/
+}
 
 /*
 app.get('/', (req, res) => {         // / is a home route

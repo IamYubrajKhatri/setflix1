@@ -7,7 +7,7 @@ dotenv.config();
 
 export const Env_Vars = {
     MongoDBURI: process.env.MongoDBURI,
-    PORT: process.env.PORT || 4001,
+    PORT: process.env.PORT || 8080,
 
     JWT_SECRET: process.env.JWT_SECRET,
     NODE_ENV: process.env.NODE_ENV,
