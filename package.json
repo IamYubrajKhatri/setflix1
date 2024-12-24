@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon Backend/index.js",
     "start": "cross-env NODE_ENV=production node Backend/index.js",
-    "build": "npm install && npm install --prefix Frontend &&echo $PATH && PATH=$(npm prefix --prefix Frontend)/node_modules/.bin:$PATH npm run build --prefix Frontend"
+    "build": "npm install && npm install -g vite && npm install --prefix Frontend &&echo $PATH && PATH=$(npm prefix --prefix Frontend)/node_modules/.bin:$PATH npm run build --prefix Frontend "
   },
   "repository": {
     "type": "git",
